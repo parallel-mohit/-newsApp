@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".uploadImgActivity">
 
+
     <ImageView
         android:id="@+id/upldImg"
         android:layout_width="264dp"

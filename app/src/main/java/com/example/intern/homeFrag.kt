@@ -21,6 +21,8 @@ class homeFrag : Fragment() {
         val view= inflater.inflate(R.layout.fragment_home, container, false)
         val feedbtn=view.findViewById<Button>(R.id.feed)
         val uplbtn=view.findViewById<Button>(R.id.upldImg)
+
+
         feedbtn.setOnClickListener {
             activity?.let {
                 startActivity(Intent(activity, feedActivity::class.java))

@@ -19,6 +19,9 @@
             app:destination="@id/homeFrag"
             app:popUpTo="@id/intro1"
             app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_intro1_self"
+            app:destination="@id/intro1" />
     </fragment>
     <fragment
         android:id="@+id/intro2"
@@ -56,10 +59,18 @@
             android:id="@+id/action_homeFrag_to_feedActivity"
             app:destination="@id/feedActivity"
             app:popUpTo="@id/homeFrag" />
+        <action
+            android:id="@+id/action_homeFrag_to_uploadImgActivity"
+            app:destination="@id/uploadImgActivity" />
     </fragment>
     <activity
         android:id="@+id/feedActivity"
         android:name="com.example.intern.feedimage.feedActivity"
         android:label="activity_feed"
         tools:layout="@layout/activity_feed" />
+    <activity
+        android:id="@+id/uploadImgActivity"
+        android:name="com.example.intern.uploadImgActivity"
+        android:label="activity_upload_img"
+        tools:layout="@layout/activity_upload_img" />
 </navigation>

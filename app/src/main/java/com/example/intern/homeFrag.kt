@@ -1,5 +1,6 @@
 package com.example.intern
 
+import android.content.Context.MODE_PRIVATE
 import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -23,6 +24,7 @@ class homeFrag : Fragment() {
         val uplbtn=view.findViewById<Button>(R.id.upldImg)
 
 
+
         feedbtn.setOnClickListener {
             activity?.let {
                 startActivity(Intent(activity, feedActivity::class.java))
@@ -36,6 +38,7 @@ class homeFrag : Fragment() {
         }
         return view
     }
+
 
 
 }

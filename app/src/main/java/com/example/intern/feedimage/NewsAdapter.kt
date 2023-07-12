@@ -15,7 +15,7 @@ import com.example.intern.R
 class newsAdapter(val context: Context, val  articles : List<img>) : RecyclerView.Adapter<newsAdapter.imgViewHolder>(){
     class imgViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
         var newsImag = itemView.findViewById<ImageView>(R.id.rcimg)
-        var authortxt =itemView.findViewById<TextView>(R.id.author)
+
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): imgViewHolder {
@@ -32,7 +32,7 @@ class newsAdapter(val context: Context, val  articles : List<img>) : RecyclerVie
 
             val article = articles[position]
 
-            holder.authortxt.text=position.toString()
+
             Glide.with(context).load(article.urlToImage).into(holder.newsImag)
 
 

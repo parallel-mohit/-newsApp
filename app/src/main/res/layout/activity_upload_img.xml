@@ -11,29 +11,48 @@
         android:id="@+id/upldImg"
         android:layout_width="264dp"
         android:layout_height="212dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="52dp"
         android:src="@drawable/vengance"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="53dp"
+        android:background="@drawable/img_8"
+        android:backgroundTint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/selectimg"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="72dp"
-        android:layout_marginTop="60dp"
+        android:layout_width="286dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/custom_ready1btn"
         android:text="select Image"
+        android:textSize="17sp"
+        android:textStyle="bold"
+
+        app:circularflow_radiusInDP="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/upldImg" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="72dp"
         android:id="@+id/upldimg"
-        android:layout_marginTop="32dp"
+        android:layout_width="286dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="64dp"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+
+        android:layout_marginTop="72dp"
+        android:background="@drawable/cutm_upldbtn"
         android:text="Upload Image"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/selectimg" />

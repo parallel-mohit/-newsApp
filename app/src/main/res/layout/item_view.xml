@@ -6,58 +6,59 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="0dp"
-        android:orientation="horizontal">
-
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="62dp"
-            android:layout_height="53dp"
-
-
-            android:src="@drawable/verge"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="127dp"
-                android:layout_height="27dp"
-                android:layout_marginStart="28dp"
-                android:text="The Verge"
-                android:textSize="23dp"
-                android:textStyle="bold"
 
-                app:layout_constraintStart_toEndOf="@+id/imageView"
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="62dp"
+                android:layout_height="53dp"
+
+
+                android:src="@drawable/verge"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="7dp"
-                android:id="@+id/author"
+                android:orientation="vertical">
 
-                android:text="Tech News"
-                android:textSize="15sp" />
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="127dp"
+                    android:layout_height="27dp"
+                    android:layout_marginStart="28dp"
+                    android:text="The Verge"
+                    android:textSize="23dp"
+                    android:textStyle="bold"
+
+                    app:layout_constraintStart_toEndOf="@+id/imageView"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="7dp"
+                    android:id="@+id/author"
+
+                    android:text="Tech News"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+
         </LinearLayout>
 
 
-    </LinearLayout>
-
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="385dp"
+        android:layout_height="393dp"
 
         android:layout_marginTop="12dp"
         android:orientation="vertical"
@@ -117,6 +118,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
                 android:text="21 likes"
                 android:textSize="14sp" />
 
@@ -149,7 +151,5 @@
 
 
         </LinearLayout>
-
     </LinearLayout>
-
 </LinearLayout>

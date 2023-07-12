@@ -26,7 +26,6 @@ class basicFragment : Fragment() {
             findNavController().navigate(R.id.action_basicFragment_to_intro1)
         }
         val view=inflater.inflate(R.layout.fragment_basic, container, false)
-
         return view
     }
     fun onBoardingFinished():Boolean {

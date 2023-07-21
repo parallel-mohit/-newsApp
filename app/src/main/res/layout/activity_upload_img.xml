@@ -7,48 +7,51 @@
     android:layout_height="match_parent"
     tools:context=".uploadImgActivity">
 
+
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/tlbr"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="60dp"
         android:theme="@style/Theme.Intern.AppBarOverlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <include layout="@layout/appbaruploadimage"
+        <include
+            layout="@layout/appbaruploadimage"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="13dp" />
 
     </androidx.appcompat.widget.Toolbar>
-
 
     <ImageView
         android:id="@+id/upldImg"
         android:layout_width="215dp"
         android:layout_height="150dp"
-        android:layout_marginTop="112dp"
+        android:layout_marginTop="52dp"
         android:src="@drawable/vengance"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/tlbr" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:layout_width="10dp"
-        android:layout_height="1dp"
-        android:layout_marginTop="84dp"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="49dp"
         android:background="@drawable/img_8"
-        android:backgroundTint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.752"
+        app:layout_constraintHorizontal_bias="0.79"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/tlbr" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/selectimg"
         android:layout_width="342dp"
         android:layout_height="74dp"
-        android:layout_marginStart="40dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="84dp"
         android:layout_marginEnd="26dp"
         android:background="@drawable/uploadimagefactivityselectbtn"
@@ -58,7 +61,7 @@
         android:textSize="17sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintHorizontal_bias="0.64"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/upldImg" />
 
@@ -66,17 +69,13 @@
         android:id="@+id/upldimg"
         android:layout_width="342dp"
         android:layout_height="74dp"
-        android:layout_marginStart="64dp"
         android:layout_marginTop="72dp"
-        android:layout_marginEnd="61dp"
         android:background="@drawable/cutm_upldbtn"
         android:text="Upload Image"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="17sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.392"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/selectimg"
         app:layout_constraintTop_toBottomOf="@+id/selectimg" />
 
 

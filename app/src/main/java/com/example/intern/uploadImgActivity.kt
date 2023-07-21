@@ -11,10 +11,7 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.widget.Toolbar
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.navigateUp
-import androidx.navigation.ui.setupActionBarWithNavController
-import androidx.navigation.ui.setupWithNavController
+import androidx.navigation.ui.*
 
 class uploadImgActivity : AppCompatActivity() {
     private lateinit var appBarConfiguration:AppBarConfiguration
@@ -27,8 +24,6 @@ class uploadImgActivity : AppCompatActivity() {
         imgView.setImageURI(it)
     }
     override fun onCreate(savedInstanceState: Bundle?) {
-
-
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_upload_img)
         imgView=findViewById<ImageView>(R.id.upldImg)
@@ -39,10 +34,17 @@ class uploadImgActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
+
+
         slectbtn.setOnClickListener {
             contract.launch("image/*")
         }
 
     }
+    override fun onSupportNavigateUp(): Boolean {
+        val navController = this.findNavController(R.id.fragmentContainerView)
+        return navController.navigateUp()
+    }
+
 
 }

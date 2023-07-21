@@ -19,7 +19,7 @@
         <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="Theme.Intern.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.Intern.AppBarOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
     <style name="Theme.Intern.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
     <style name="MyTheme" parent="Theme.AppCompat.Light.NoActionBar">

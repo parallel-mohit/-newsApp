@@ -22,9 +22,7 @@ class intro3 : Fragment() {
         val btn=view.findViewById<Button>(R.id.ready3)
         btn.setOnClickListener {
             onBoardingFinished()
-
             findNavController().navigate(R.id.action_intro3_to_homeFrag)
-
         }
         val skipbtn=view.findViewById<Button>(R.id.skip3)
         skipbtn.setOnClickListener {

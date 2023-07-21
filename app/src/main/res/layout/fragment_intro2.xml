@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -10,68 +9,98 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/skip2"
-        android:layout_width="140dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/custom_btn"
         android:text="@string/skip_intro"
         android:textAllCaps="false"
         android:textColor="#306FA8"
-        android:textSize="24sp"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.896"
+        app:layout_constraintHorizontal_bias="0.96"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="265.9dp"
-        android:layout_height="256dp"
-        android:layout_marginTop="68dp"
+        android:layout_width="330.3dp"
+        android:layout_height="227dp"
+        android:layout_marginTop="88dp"
         android:src="@drawable/img__2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.419"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.cardview.widget.CardView
-        android:layout_width="342dp"
-        android:layout_height="351dp"
-        android:layout_marginTop="40dp"
-        android:backgroundTint="#306FA8"
-        android:elevation="5dp"
+        android:layout_width="343.34dp"
+        android:layout_height="386.21dp"
+        android:layout_marginBottom="14dp"
         app:cardCornerRadius="40dp"
+        app:cardElevation="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView">
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent">
 
-        <TextView
-            android:id="@+id/upperCrdText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingStart="29dp"
-            android:paddingTop="45dp"
-            android:text="Our Mission"
-            android:textColor="@color/white"
-            android:textSize="34sp" />
 
-        <TextView
-            android:id="@+id/middleCrdText"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="100dp"
-            android:paddingStart="29dp"
-            android:text="Lorem ispum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor indididunt ut labore et dolore magna aliqua,Ut enim ad minim veniam"
-            android:textColor="#BCB7B7"
-            android:textSize="17sp" />
+            android:layout_height="386.21dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/cardviewgradient2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/upperCrdText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="24dp"
+                android:paddingTop="60dp"
+                android:text="Our Mission"
+                android:textColor="@color/white"
+                android:textSize="34sp" />
+
+
+            <TextView
+                android:id="@+id/middleCrdText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:paddingStart="24dp"
+                android:text="Lorem ispum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"
+                android:textColor="#BCB7B7"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/middleCrdText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="24dp"
+                android:text="indididunt ut labore et dolore magna "
+                android:textColor="#BCB7B7"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/middleCrdText3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="24dp"
+                android:text="aliqua,Ut enim ad minim veniam"
+                android:textColor="#BCB7B7"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/ready2"
-            android:layout_width="90dp"
-            android:layout_height="90dp"
-            android:layout_marginLeft="119dp"
-            android:layout_marginTop="210dp"
+            android:layout_width="94dp"
+            android:layout_height="94dp"
+            android:layout_marginLeft="113dp"
+            android:layout_marginTop="249dp"
 
-            android:background="@drawable/img_6" />
+            android:background="@drawable/img_2" />
     </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

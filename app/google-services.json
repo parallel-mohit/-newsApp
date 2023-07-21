@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "26874415175",
+    "project_id": "parallelnews-f972e",
+    "storage_bucket": "parallelnews-f972e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:26874415175:android:40c377fdc234de43bb8962",
+        "android_client_info": {
+          "package_name": "com.example.intern"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "26874415175-23tb4e4urk7dvib0g2tuql711b0lff11.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxVlP3D31Td9kBfU4OiLN9-EqBWuFUPwI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "26874415175-23tb4e4urk7dvib0g2tuql711b0lff11.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -3,57 +3,79 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/white"
     android:layout_height="match_parent"
     tools:context=".uploadImgActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tlbr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:theme="@style/Theme.Intern.AppBarOverlay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <include layout="@layout/appbaruploadimage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </androidx.appcompat.widget.Toolbar>
 
 
     <ImageView
         android:id="@+id/upldImg"
-        android:layout_width="264dp"
-        android:layout_height="212dp"
-        android:layout_marginTop="52dp"
+        android:layout_width="215dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="112dp"
         android:src="@drawable/vengance"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:layout_width="15dp"
-        android:layout_height="15dp"
-        android:layout_marginTop="53dp"
+        android:layout_width="10dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="84dp"
         android:background="@drawable/img_8"
         android:backgroundTint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintHorizontal_bias="0.752"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/selectimg"
-        android:layout_width="286dp"
-        android:layout_height="47dp"
-        android:layout_marginTop="56dp"
-        android:background="@drawable/custom_ready1btn"
-        android:text="select Image"
+        android:layout_width="342dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="26dp"
+        android:background="@drawable/uploadimagefactivityselectbtn"
+        android:text="Select Image"
+        android:textAllCaps="false"
+        android:textColor="#1E1E1E"
         android:textSize="17sp"
         android:textStyle="bold"
-
-        app:circularflow_radiusInDP="10dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/upldImg" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/upldimg"
-        android:layout_width="286dp"
-        android:layout_height="47dp"
+        android:layout_width="342dp"
+        android:layout_height="74dp"
         android:layout_marginStart="64dp"
-        android:textColor="@color/white"
-        android:textSize="17sp"
-
         android:layout_marginTop="72dp"
+        android:layout_marginEnd="61dp"
         android:background="@drawable/cutm_upldbtn"
         android:text="Upload Image"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.392"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/selectimg" />
 

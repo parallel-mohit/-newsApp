@@ -1,4 +1,4 @@
-package com.example.intern.feedimage
+package  com.example.intern.feedimage
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -9,6 +9,9 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.intern.R
 import com.example.intern.databinding.ActivityFeedBinding
+import com.example.intern.feedimage.News
+import com.example.intern.feedimage.NewsService
+import com.example.intern.feedimage.newsAdapter
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

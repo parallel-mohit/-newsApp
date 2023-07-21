@@ -11,24 +11,19 @@
         android:icon="@mipmap/ic_launcher"
         android:label=""
         android:supportsRtl="true"
-        android:theme="@style/Theme.Intern"
+
         tools:targetApi="31">
         <activity
-            android:name=".basic1"
-            android:exported="false" />
-        <activity
-            android:name=".basic"
-            android:exported="false" />
-        <activity
             android:name=".uploadImgActivity"
-            android:exported="false"
-            android:label="@string/title_activity_upload_img"
-            android:theme="@style/Theme.Intern.NoActionBar" />
+            android:theme="@style/MyTheme"
+            android:exported="false" />
         <activity
             android:name=".feedimage.feedActivity"
+            android:theme="@style/Theme.Intern"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
+            android:theme="@style/MyTheme"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

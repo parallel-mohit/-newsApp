@@ -19,8 +19,8 @@ class intro1 : Fragment() {
         btn.setOnClickListener {
             findNavController().navigate(R.id.action_intro1_to_intro2)
         }
-        val skipbtn=view.findViewById<Button>(R.id.skip1)
-        skipbtn.setOnClickListener {
+        val skipbtn1=view.findViewById<Button>(R.id.skip1)
+        skipbtn1.setOnClickListener {
             findNavController().navigate(R.id.action_intro1_to_homeFrag)
         }
         return view
